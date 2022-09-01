@@ -2,14 +2,16 @@ import java.util.Scanner;
 
 public class RaizScanner {
 
-    double num;
+    int num;
+    double result;
 
     public void scan() {
         System.out.println("Ingrese un numero");
         Scanner sc = new Scanner(System.in);
-        num = Math.sqrt(sc.nextDouble());
+        num = sc.nextInt();
+        result = Math.sqrt(num);
 
-        System.out.println("La raiz obtenida es " + num);
+        System.out.println("La raiz de " + num +" es = " + result);
     }
 
 }
